@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #cd841e;
 }
 
-.login-container {
+.login-container, .menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
     position: relative;
 }
 
-.login-form {
+.login-form, .menu-content {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 20px 30px;
     border-radius: 10px;
@@ -24,13 +24,13 @@ body {
     width: 100%;
 }
 
-.login-form h1 {
+.login-form h1, .menu-content h1 {
     font-size: 24px;
     color: #007bff;
     margin-bottom: 10px;
 }
 
-.login-form p {
+.login-form p, .menu-content p {
     font-size: 14px;
     color: #333;
     margin-bottom: 20px;
@@ -48,7 +48,7 @@ input[type="email"], input[type="password"] {
     position: relative;
 }
 
-#toggle-password {
+#toggle-password, #toggle-register-password {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -76,6 +76,15 @@ a {
     font-size: 12px;
 }
 
-#register-btn {
+#register-btn, #submit-register-btn {
     background-color: #28a745;
+}
+
+#back-to-login {
+    background-color: #007bff;
+}
+
+#clock {
+    font-size: 36px;
+    margin: 20px 0;
 }

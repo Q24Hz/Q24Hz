@@ -7,20 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
+    <div id="login-container" class="login-container">
         <div class="login-form">
             <h1>Weo com web Q24hz</h1>
-            <p> Web test hehe</p>
-            <input type="email" id="email" placeholder="Email">
-            <div class="password-field">
-                <input type="password" id="password" placeholder="Mật Khẩu">
-                <button id="toggle-password" onclick="togglePasswordVisibility()">😇</button>
+            <p>Web test hehe</p>
+            <div id="login-section">
+                <input type="email" id="email" placeholder="Email">
+                <div class="password-field">
+                    <input type="password" id="password" placeholder="Mật Khẩu">
+                    <button id="toggle-password" onclick="togglePasswordVisibility()">😇</button>
+                </div>
+                <button id="login-btn" onclick="login()">ĐĂNG NHẬP</button>
+                <a href="#" id="forgot-password">Quên Mật Khẩu</a>
+                <button id="register-btn" onclick="showRegister()">Đăng Kí</button>
             </div>
-            <button id="login-btn"> ĐĂNG NHẬP</button>
-            <a href="#" id="forgot-password"> Quên Mật Khẩu</a>
-            <button id="register-btn"> Đăng Kí</button>
+            <div id="register-section" style="display: none;">
+                <input type="email" id="register-email" placeholder="Email">
+                <div class="password-field">
+                    <input type="password" id="register-password" placeholder="Mật Khẩu">
+                    <button id="toggle-register-password" onclick="toggleRegisterPasswordVisibility()">😇</button>
+                </div>
+                <button id="submit-register-btn" onclick="register()">Đăng Kí</button>
+                <a href="#" id="back-to-login" onclick="showLogin()">Quay lại Đăng Nhập</a>
+            </div>
         </div>
     </div>
+
+    <div id="menu-container" class="menu-container" style="display: none;">
+        <div class="menu-content">
+            <h1>Weo com web Q24hz</h1>
+            <div id="clock"></div>
+            <button id="logout-btn" onclick="logout()">Đăng Xuất</button>
+        </div>
+    </div>
+    
     <script src="main.js"></script>
 </body>
 </html>
