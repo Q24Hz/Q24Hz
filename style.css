@@ -85,6 +85,24 @@ a {
 }
 
 #clock {
-    font-size: 36px;
+    font-size: 48px;
     margin: 20px 0;
+}
+
+#date-time {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#date {
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 20px;
+    color: #333;
+}
+
+#logout-btn {
+    background-color: #dc3545;
 }
