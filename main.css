@@ -1,15 +1,29 @@
+html{
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #cd841e;
+    background-image: url('https://images.freeimages.com/images/large-previews/d2b/sunset-1312221.jpg'); /* Đặt liên kết hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh phủ toàn bộ trang */
+    background-position: center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh nền */
 }
+}
+
+/* Đặt nền hình ảnh cho một phần tử cụ thể (nếu cần) */
+.login-container {
+    background-image: url('https://images.freeimages.com/images/large-previews/d2b/sunset-1312221.jpg'); /* Đặt liên kết hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh phủ toàn bộ phần tử */
+    background-position: center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh nền */
+}
+
+
 
 .login-container, .menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('background.png');
+    background-image: url('https://images.freeimages.com/images/large-previews/d2b/sunset-1312221.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
