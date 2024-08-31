@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <!-- Đăng nhập/Đăng ký -->
     <div id="login-container" class="login-container">
         <div class="login-form">
             <h1>Weo com web Q24hz</h1>
@@ -15,36 +16,60 @@
                 <input type="email" id="email" placeholder="Email">
                 <div class="password-field">
                     <input type="password" id="password" placeholder="Mật Khẩu">
-                    <button id="toggle-password" onclick="togglePasswordVisibility()">😇</button>
                 </div>
-                <button id="login-btn" onclick="login()">ĐĂNG NHẬP</button>
+                <button id="login-btn">ĐĂNG NHẬP</button>
                 <a href="#" id="forgot-password">Quên Mật Khẩu</a>
-                <button id="register-btn" onclick="showRegister()">Đăng Kí</button>
+                <button id="register-btn">Đăng Kí</button>
             </div>
             <div id="register-section" style="display: none;">
                 <input type="email" id="register-email" placeholder="Email">
                 <div class="password-field">
                     <input type="password" id="register-password" placeholder="Mật Khẩu">
-                    <button id="toggle-register-password" onclick="toggleRegisterPasswordVisibility()">😇</button>
                 </div>
-                <button id="submit-register-btn" onclick="register()">Đăng Kí</button>
-                <a href="#" id="back-to-login" onclick="showLogin()">Quay lại Đăng Nhập</a>
+                <button id="submit-register-btn">Đăng Kí</button>
+                <a href="#" id="back-to-login">Quay lại Đăng Nhập</a>
             </div>
         </div>
     </div>
 
+    <!-- Giao diện menu sau khi đăng nhập -->
     <div id="menu-container" class="menu-container" style="display: none;">
-        <div class="menu-content">
-            <h1>Weo com web Q24hz</h1>
-            <div id="clock"></div>
-            <div id="date-time">
-                <div id="date"></div>
-                <div id="temperature"></div>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Weo</h1>
             </div>
-            <button id="logout-btn" onclick="logout()">Đăng Xuất</button>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item">Trang Chủ</a>
+                <a href="#" class="nav-item">Danh Sách Phát</a>
+                <a href="#" class="nav-item">Album</a>
+                <a href="#" class="nav-item">Tìm Kiếm</a>
+                <a href="#" class="nav-item">Cài Đặt</a>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <div id="date-time">
+                    <div id="clock"></div>
+                    <div id="date"></div>
+                    <div id="weather"></div>
+                </div>
+                <button id="logout-btn">Đăng Xuất</button>
+            </header>
+            <main class="content">
+                <div class="spotify-playlist">
+                    <h2>Danh Sách Phát</h2>
+                    <input type="file" id="upload-music" multiple>
+                    <button id="upload-btn">Tải Nhạc lên Dropbox</button>
+                    <ul id="music-list"></ul>
+                </div>
+                <div class="spotify-details">
+                    <h2>Thông Tin Chi Tiết</h2>
+                    <audio id="audio-player" controls></audio>
+                </div>
+            </main>
         </div>
     </div>
-    
+
     <script src="main.js"></script>
 </body>
 </html>
