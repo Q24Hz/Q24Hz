@@ -58,8 +58,12 @@ a {
     color: #1DB954;
     text-decoration: none;
     display: block;
+     color: white;
+    border: none;
+    border-radius: 5px;
     margin-top: 10px;
-    font-size: 12px;
+    cursor: pointer;
+    padding: 8px;
 }
 
 #register-btn, #submit-register-btn {
